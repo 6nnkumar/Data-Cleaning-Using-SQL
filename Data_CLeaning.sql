@@ -128,7 +128,10 @@ update layoff_stagging2 set industry = NULL where industry = "";   -- updating a
                t1.company = t2.company
                  set t1.industry = t2.industry
                   where(t1.industry is null and t2.industry is not null); -- updating  the industry fields with the similar fields.  
-                  
+
+
+
+
                   
                      --                               4. Remove any column 
                
