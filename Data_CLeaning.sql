@@ -55,6 +55,8 @@ rollback; -- used to undo the sql query
      
      Delete from layoff_stagging2 where row_num > 1;  -- Deleting the duplicates
 
+
+
                     --                                          2. Standarizing the Data
                     
                     --                          It means finding the issues in your data and fixing it
@@ -91,6 +93,10 @@ rollback; -- used to undo the sql query
  update layoff_stagging2 set date = str_to_date(`date`, '%m/%d/%Y');  -- updating the date syntax
  
  alter table layoff_stagging2 modify column date DATE;                -- Modified the data type of date from text to DATE
+
+
+
+
  
   --                                                   3. Null Values or Blank values
   
